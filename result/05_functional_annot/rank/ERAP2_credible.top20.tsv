@@ -1,0 +1,2 @@
+SNP	gene	impact	most_severe_consequence	consequence_terms	biotype	amino_acids	protein_start	protein_end	sift_prediction	polyphen_prediction	CADD_PHRED_max	PIP	R2_to_lead	score	is_lead
+rs2910686	ERAP2	MODIFIER	intron_variant	intron_variant	protein_coding							1.0	1.0	0.4	1

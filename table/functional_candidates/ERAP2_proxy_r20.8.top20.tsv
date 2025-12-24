@@ -1,0 +1,21 @@
+SNP	gene	impact	most_severe_consequence	consequence_terms	biotype	amino_acids	protein_start	protein_end	sift_prediction	polyphen_prediction	CADD_PHRED_max	PIP	R2_to_lead	score	is_lead
+rs2248374	ERAP2	LOW	splice_donor_region_variant	splice_donor_region_variant,intron_variant	protein_coding							4.889933580796673e-207	0.825515	3.4	0
+rs2549797	ERAP2	LOW	splice_donor_5th_base_variant	splice_donor_5th_base_variant,intron_variant,NMD_transcript_variant	nonsense_mediated_decay							4.889933580796673e-207	0.825515	3.4	0
+rs39602	LNPEP	MODIFIER	3_prime_UTR_variant	3_prime_UTR_variant	protein_coding							1.2769349278029531e-111	0.951064	1.2	0
+rs27998	LNPEP	MODIFIER	3_prime_UTR_variant	3_prime_UTR_variant	protein_coding							2.535833499761259e-139	0.924658	1.2	0
+rs1019503	ERAP2	MODIFIER	3_prime_UTR_variant	downstream_gene_variant	protein_coding							4.889933580796673e-207	0.825515	1.2	0
+rs1230381	ERAP2	MODIFIER	3_prime_UTR_variant	downstream_gene_variant	protein_coding							4.889933580796673e-207	0.825515	1.2	0
+rs1230382	ERAP2	MODIFIER	3_prime_UTR_variant	downstream_gene_variant	protein_coding							4.889933580796673e-207	0.825515	1.2	0
+rs2255546	ERAP2	MODERATE	missense_variant	missense_variant	protein_coding	L/I	826	826	deleterious	possibly_damaging		4.889933580796673e-207	0.825515	1.2	0
+rs2549782	ERAP2	MODERATE	missense_variant	missense_variant	protein_coding	K/N	347	347	tolerated	benign		4.889933580796673e-207	0.825515	1.2	0
+rs1056893	ERAP2	LOW	synonymous_variant	synonymous_variant	protein_coding	S	730	730				4.889933580796673e-207	0.825515	0.8	0
+rs2287988	ERAP2	LOW	synonymous_variant	synonymous_variant	protein_coding	Q	518	518				4.889933580796673e-207	0.825515	0.8	0
+rs2548538	ERAP2	LOW	synonymous_variant	synonymous_variant	protein_coding	P	390	390				4.889933580796673e-207	0.825515	0.8	0
+rs2549796	ERAP2	LOW	synonymous_variant	synonymous_variant	protein_coding	G	698	698				4.889933580796673e-207	0.825515	0.8	0
+rs2910686	ERAP2	MODIFIER	intron_variant	intron_variant	protein_coding							1.0	1.0	0.4	1
+rs2927608	ERAP2	MODIFIER	intron_variant	intron_variant	protein_coding							2.551751358678398e-38	0.982998	0.4	0
+rs10038651	LNPEP	MODIFIER	intron_variant	intron_variant	protein_coding							1.2769349278029531e-111	0.951064	0.4	0
+rs10044354	LNPEP	MODIFIER	intron_variant	intron_variant	protein_coding							1.2769349278029531e-111	0.951064	0.4	0
+rs10051637	LNPEP	MODIFIER	intron_variant	intron_variant	protein_coding							1.2769349278029531e-111	0.951064	0.4	0
+rs1046396	LNPEP	MODIFIER	non_coding_transcript_exon_variant	intron_variant	protein_coding							1.2769349278029531e-111	0.951064	0.4	0
+rs10476696	LNPEP	MODIFIER	intron_variant	intron_variant	protein_coding							1.2769349278029531e-111	0.951064	0.4	0

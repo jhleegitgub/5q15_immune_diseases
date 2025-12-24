@@ -1,0 +1,13 @@
+SNP	gene	impact	most_severe_consequence	consequence_terms	biotype	amino_acids	protein_start	protein_end	sift_prediction	polyphen_prediction	CADD_PHRED_max	PIP	R2_to_lead	score	is_lead
+rs30379	ERAP1	LOW	splice_region_variant	splice_region_variant,splice_polypyrimidine_tract_variant,intron_variant	protein_coding							0.0833333333333178	1.0	3.4	1
+rs27529	ERAP1	MODERATE	missense_variant	missense_variant	protein_coding	S/R	453	453	tolerated	benign		0.0833333333333178	1.0	1.2	0
+rs30187	ERAP1	MODERATE	missense_variant	missense_variant	protein_coding	K/M	528	528	deleterious	probably_damaging		0.0833333333333178	1.0	1.2	0
+rs151964	ERAP1	MODIFIER	intron_variant	intron_variant	protein_coding							0.0833333333333178	1.0	0.4	0
+rs246453	ERAP1	MODIFIER	intron_variant	intron_variant	protein_coding							0.0833333333333178	1.0	0.4	0
+rs246454	ERAP1	MODIFIER	intron_variant	intron_variant	protein_coding							0.0833333333333178	1.0	0.4	0
+rs246455	ERAP1	MODIFIER	intron_variant	intron_variant	protein_coding							0.0833333333333178	1.0	0.4	0
+rs26510	ERAP1	MODIFIER	intron_variant	intron_variant	protein_coding							0.0833333333333178	1.0	0.4	0
+rs27710	ERAP1	MODIFIER	intron_variant	intron_variant	protein_coding							0.0833333333333178	1.0	0.4	0
+rs30378	ERAP1	MODIFIER	intron_variant	intron_variant	protein_coding							0.0833333333333178	1.0	0.4	0
+rs30380	ERAP1	MODIFIER	intron_variant	intron_variant	protein_coding							0.0833333333333178	1.0	0.4	0
+rs469758	ERAP1	MODIFIER	intron_variant	intron_variant	protein_coding							0.0833333333333178	1.0	0.4	0

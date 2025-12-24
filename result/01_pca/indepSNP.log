@@ -1,0 +1,50 @@
+PLINK v1.9.0-b.7.11 64-bit (19 Aug 2025)
+Options in effect:
+  --bfile /home/jihwanlee/Publish/test3/../GenotypeData/GW.E-GEUV-3.EUR.MAF005.HWE1e-06
+  --indep-pairwise 50 5 0.2
+  --out /home/jihwanlee/Publish/test3/result/01_pca/indepSNP
+
+Hostname: DESKTOP-KIL3KVO
+Working directory: /home/jihwanlee/Publish/test3
+Start time: Thu Dec 25 03:00:34 2025
+
+Random number seed: 1766599234
+11800 MB RAM detected; reserving 5900 MB for main workspace.
+5913563 variants loaded from .bim file.
+376 people (0 males, 0 females, 376 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to
+/home/jihwanlee/Publish/test3/result/01_pca/indepSNP.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 376 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.998844.
+5913563 variants and 376 people pass filters and QC.
+Note: No phenotypes present.
+Pruned 417435 variants from chromosome 1, leaving 31680.
+Pruned 456932 variants from chromosome 2, leaving 32652.
+Pruned 390158 variants from chromosome 3, leaving 27547.
+Pruned 402185 variants from chromosome 4, leaving 28439.
+Pruned 354872 variants from chromosome 5, leaving 25020.
+Pruned 370892 variants from chromosome 6, leaving 26537.
+Pruned 326540 variants from chromosome 7, leaving 24241.
+Pruned 304192 variants from chromosome 8, leaving 21672.
+Pruned 237738 variants from chromosome 9, leaving 18364.
+Pruned 282605 variants from chromosome 10, leaving 21020.
+Pruned 277684 variants from chromosome 11, leaving 20255.
+Pruned 264077 variants from chromosome 12, leaving 20040.
+Pruned 204086 variants from chromosome 13, leaving 15189.
+Pruned 179424 variants from chromosome 14, leaving 13593.
+Pruned 156439 variants from chromosome 15, leaving 12592.
+Pruned 168253 variants from chromosome 16, leaving 13715.
+Pruned 146416 variants from chromosome 17, leaving 12438.
+Pruned 156935 variants from chromosome 18, leaving 12346.
+Pruned 128021 variants from chromosome 19, leaving 10979.
+Pruned 122240 variants from chromosome 20, leaving 9859.
+Pruned 79332 variants from chromosome 21, leaving 6409.
+Pruned 75932 variants from chromosome 22, leaving 6588.
+Pruning complete.  5502388 of 5913563 variants removed.
+Marker lists written to
+/home/jihwanlee/Publish/test3/result/01_pca/indepSNP.prune.in and
+/home/jihwanlee/Publish/test3/result/01_pca/indepSNP.prune.out .
+
+End time: Thu Dec 25 03:00:38 2025

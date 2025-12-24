@@ -1,0 +1,40 @@
+PLINK v1.9.0-b.7.11 64-bit (19 Aug 2025)
+Options in effect:
+  --bfile /home/jihwanlee/Publish/test3/../GenotypeData/GW.E-GEUV-3.EUR.MAF005.HWE1e-06
+  --chr 5
+  --from-bp 95612083
+  --ld-snp rs1065407
+  --ld-window 99999
+  --ld-window-kb 500
+  --ld-window-r2 0
+  --out /home/jihwanlee/Publish/test3/result/05_functional_annot/ld/ERAP1_sig3_proxy_r20.8
+  --r2 gz
+  --to-bp 96612083
+
+Hostname: DESKTOP-KIL3KVO
+Working directory: /home/jihwanlee/Publish/test3
+Start time: Thu Dec 25 03:01:52 2025
+
+Random number seed: 1766599312
+11800 MB RAM detected; reserving 5900 MB for main workspace.
+2454 out of 5913563 variants loaded from .bim file.
+376 people (0 males, 0 females, 376 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to
+/home/jihwanlee/Publish/test3/result/05_functional_annot/ld/ERAP1_sig3_proxy_r20.8.nosex
+.
+Using up to 8 threads (change this with --threads).
+Before main variant filters, 376 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is exactly 1.
+2454 variants and 376 people pass filters and QC.
+Note: No phenotypes present.
+Running --r2 with the following filters:
+  --ld-window: 99999
+  --ld-window-kb: 500
+  --ld-window-r2: 0
+  --ld-snp[s]
+--r2 to
+/home/jihwanlee/Publish/test3/result/05_functional_annot/ld/ERAP1_sig3_proxy_r20.8.ld.gz
+... done.
+
+End time: Thu Dec 25 03:01:52 2025

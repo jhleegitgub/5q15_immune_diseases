@@ -1,0 +1,14 @@
+SNP	gene	impact	most_severe_consequence	consequence_terms	biotype	amino_acids	protein_start	protein_end	sift_prediction	polyphen_prediction	CADD_PHRED_max
+rs1057569	ERAP1	MODIFIER	3_prime_UTR_variant	intron_variant	protein_coding						
+rs1065407	ERAP1	MODIFIER	3_prime_UTR_variant	intron_variant	protein_coding						
+rs13160562	ERAP1	MODIFIER	3_prime_UTR_variant	intron_variant	protein_coding						
+rs13167972	ERAP1	MODIFIER	3_prime_UTR_variant	3_prime_UTR_variant	protein_coding						
+rs2042379	CTD-2260A17.2	MODIFIER	intron_variant	intron_variant,non_coding_transcript_variant	processed_transcript						
+rs2042380	CTD-2260A17.2	MODIFIER	intron_variant	intron_variant,non_coding_transcript_variant	processed_transcript						
+rs26508	CAST	MODIFIER	intron_variant	intron_variant	protein_coding						
+rs27851	CAST	MODIFIER	intron_variant	intron_variant	protein_coding						
+rs27944	CAST	MODIFIER	intron_variant	intron_variant	protein_coding						
+rs27962	CAST	MODIFIER	intron_variant	intron_variant	protein_coding						
+rs7063	ERAP1	MODIFIER	3_prime_UTR_variant	intron_variant	protein_coding						
+rs731827	CAST	MODIFIER	intron_variant	intron_variant	protein_coding						
+rs754615	CAST	MODERATE	missense_variant	missense_variant	protein_coding	C/S	386	386	tolerated	benign	

@@ -1,0 +1,2 @@
+SNP	gene	impact	most_severe_consequence	consequence_terms	biotype	amino_acids	protein_start	protein_end	sift_prediction	polyphen_prediction	CADD_PHRED_max
+rs27039	ERAP1	MODIFIER	intron_variant	intron_variant	protein_coding						

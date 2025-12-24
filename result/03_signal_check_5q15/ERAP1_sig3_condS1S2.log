@@ -1,0 +1,40 @@
+PLINK v1.9.0-b.7.11 64-bit (19 Aug 2025)
+Options in effect:
+  --allow-no-sex
+  --bfile /home/jihwanlee/Publish/test3/../GenotypeData/GW.E-GEUV-3.EUR.MAF005.HWE1e-06
+  --chr 5
+  --condition-list /home/jihwanlee/Publish/test3/result/03_signal_check_5q15/cond_ERAP1_S1S2.txt
+  --covar /home/jihwanlee/Publish/test3/result/01_pca/covar_pca10.tsv
+  --covar-name C1 C2 C3 C4 C5 C6 C7 C8 C9 C10
+  --from-bp 95622260
+  --linear hide-covar
+  --out /home/jihwanlee/Publish/test3/result/03_signal_check_5q15/ERAP1_sig3_condS1S2
+  --pheno /home/jihwanlee/Publish/test3/../PhenotypeData/chr5_GD462.signalGeneQuantRPKM_plink.txt
+  --pheno-name ERAP1
+  --to-bp 96622260
+
+Hostname: DESKTOP-KIL3KVO
+Working directory: /home/jihwanlee/Publish/test3
+Start time: Thu Dec 25 04:01:32 2025
+
+Random number seed: 1766602892
+11800 MB RAM detected; reserving 5900 MB for main workspace.
+2477 out of 5913563 variants loaded from .bim file.
+376 people (0 males, 0 females, 376 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to
+/home/jihwanlee/Publish/test3/result/03_signal_check_5q15/ERAP1_sig3_condS1S2.nosex
+.
+373 phenotype values present after --pheno.
+Using 1 thread (no multithreaded calculations invoked).
+--covar: 10 covariates loaded.
+Before main variant filters, 376 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is exactly 1.
+2477 variants and 376 people pass filters and QC.
+Phenotype data is quantitative.
+--condition-list: 2 variant IDs loaded from /home/jihwanlee/Publish/test3/result/03_signal_check_5q15/cond_ERAP1_S1S2.txt.
+Writing linear model association results to
+/home/jihwanlee/Publish/test3/result/03_signal_check_5q15/ERAP1_sig3_condS1S2.assoc.linear
+... done.
+
+End time: Thu Dec 25 04:01:33 2025
