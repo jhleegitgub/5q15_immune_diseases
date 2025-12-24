@@ -1,10 +1,11 @@
+# code/locuszoom_manhattan.py  (기존 파일에 --suptitle 옵션만 추가된 전체본으로 덮어쓰기)
 #!/usr/bin/env python3
 import argparse
 import math
-from typing import Dict, List
+from typing import Dict
 
 import matplotlib
-matplotlib.use("Agg")  # headless (no Qt/wayland)
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 import numpy as np
@@ -35,17 +36,11 @@ def read_assoc_linear(path: str, test: str = "ADD") -> pd.DataFrame:
 
 
 def read_ld_r2(path: str, lead: str) -> Dict[str, float]:
-    if not path:
-        return {}
     df = pd.read_table(path, sep=r"\s+", dtype=str)
     if not {"SNP_A", "SNP_B", "R2"} <= set(df.columns):
         raise SystemExit(f"[ERR] LD file missing SNP_A/SNP_B/R2: {path}")
 
     df = df[df["SNP_A"] == lead].copy()
-    if len(df) == 0:
-        out = {lead: 1.0}
-        return out
-
     df["R2"] = pd.to_numeric(df["R2"], errors="coerce").fillna(0.0).clip(0, 1)
     out = dict(zip(df["SNP_B"].astype(str), df["R2"].astype(float)))
     out[lead] = 1.0
@@ -62,27 +57,28 @@ def plot_panel(ax, assoc: pd.DataFrame, r2map: Dict[str, float], lead: str,
 
     sc = ax.scatter(x, y, c=d["r2"].values, s=point_size, linewidths=0)
     ax.axhline(-math.log10(gw_p), linewidth=1.0)
-    ax.set_title(title)
-    ax.set_xlabel("Position (Mb)")
-    ax.set_ylabel(r"$-\log_{10}(P)$")
 
-    # lead: red dot only (no label)
     ld = d[d["SNP"] == lead]
     if len(ld) > 0:
         ax.scatter((ld["BP"].values / 1e6), ld["mlogp"].values,
-                   s=point_size * 2.5, c="red", linewidths=0, zorder=5)
+                   s=point_size * 2.2, c="red", linewidths=0, zorder=5)
+
+    ax.set_title(title)
+    ax.set_xlabel("Position (Mb)")
+    ax.set_ylabel(r"$-\log_{10}(P)$")
     return sc
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--assoc", required=True, help="assoc.linear file(s), comma-separated for multi-panel")
-    ap.add_argument("--ld", required=True, help="plink .ld file(s), comma-separated (same count as --assoc)")
-    ap.add_argument("--lead", required=True, help="lead SNP rsID(s), comma-separated (same count as --assoc)")
+    ap.add_argument("--assoc", required=True)
+    ap.add_argument("--ld", required=True)
+    ap.add_argument("--lead", required=True)
     ap.add_argument("--out-png", required=True)
 
-    ap.add_argument("--title", default=None, help="single-panel title")
-    ap.add_argument("--titles", default=None, help="comma-separated titles for multi-panel")
+    ap.add_argument("--title", default=None)
+    ap.add_argument("--titles", default=None)
+    ap.add_argument("--suptitle", default=None)
 
     ap.add_argument("--gw-threshold", type=float, default=5e-8)
     ap.add_argument("--test", default="ADD")
@@ -100,13 +96,14 @@ def main():
     if n == 1:
         assoc = read_assoc_linear(assoc_list[0], test=args.test)
         r2map = read_ld_r2(ld_list[0], lead_list[0])
-        t = args.title if args.title else "Locus (±500 kb)"
+        t = args.title if args.title else "Regional cis-eQTL association (±500 kb)"
 
-        fig = plt.figure(figsize=(10, 7), dpi=150)
+        fig = plt.figure(figsize=(10.2, 7.0), dpi=150)
         ax = fig.add_subplot(111)
         sc = plot_panel(ax, assoc, r2map, lead_list[0], t, args.gw_threshold, args.point_size)
-        cb = fig.colorbar(sc, ax=ax)
+        cb = fig.colorbar(sc, ax=ax, fraction=0.046, pad=0.04)
         cb.set_label(r"LD $r^2$ to lead")
+
         fig.tight_layout()
         fig.savefig(args.out_png, bbox_inches="tight")
         plt.close(fig)
@@ -118,7 +115,9 @@ def main():
         if len(titles) != n:
             raise SystemExit("[ERR] --titles count mismatch with --assoc")
 
-    fig = plt.figure(figsize=(5.8 * n, 4.2), dpi=150)
+    fig_w = 6.4 * n + 1.2
+    fig_h = 4.8
+    fig = plt.figure(figsize=(fig_w, fig_h), dpi=150)
     axes = [fig.add_subplot(1, n, i + 1) for i in range(n)]
 
     mappable = None
@@ -131,9 +130,16 @@ def main():
         if i != 0:
             axes[i].set_ylabel("")
 
-    cb = fig.colorbar(mappable, ax=axes, fraction=0.025, pad=0.02)
+    top = 0.82 if args.suptitle else 0.86
+    fig.subplots_adjust(left=0.06, right=0.90, bottom=0.16, top=top, wspace=0.18)
+
+    if args.suptitle:
+        fig.suptitle(args.suptitle, y=0.96)
+
+    cax = fig.add_axes([0.92, 0.18, 0.015, 0.62])
+    cb = fig.colorbar(mappable, cax=cax)
     cb.set_label(r"LD $r^2$ to lead")
-    fig.tight_layout()
+
     fig.savefig(args.out_png, bbox_inches="tight")
     plt.close(fig)
 

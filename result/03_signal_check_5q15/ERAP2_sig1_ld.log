@@ -1,26 +1,27 @@
 PLINK v1.9.0-b.7.11 64-bit (19 Aug 2025)
 Options in effect:
-  --bfile /home/jihwanlee/Publish/test3/../GenotypeData/GW.E-GEUV-3.EUR.MAF005.HWE1e-06
+  --bfile /home/jihwanlee/Publish/5q15_immune_dieases/../GenotypeData/GW.E-GEUV-3.EUR.MAF005.HWE1e-06
   --chr 5
   --from-bp 95752589
   --ld-snp rs2910686
   --ld-window 999999
   --ld-window-kb 510
   --ld-window-r2 0
-  --out /home/jihwanlee/Publish/test3/result/03_signal_check_5q15/ERAP2_sig1_ld
+  --out /home/jihwanlee/Publish/5q15_immune_dieases/result/03_signal_check_5q15/ERAP2_sig1_ld
   --r2
   --to-bp 96752589
 
 Hostname: DESKTOP-KIL3KVO
-Working directory: /home/jihwanlee/Publish/test3
-Start time: Thu Dec 25 04:01:25 2025
+Working directory: /home/jihwanlee/Publish/5q15_immune_dieases
+Start time: Thu Dec 25 04:56:06 2025
 
-Random number seed: 1766602885
+Random number seed: 1766606166
 11800 MB RAM detected; reserving 5900 MB for main workspace.
 2704 out of 5913563 variants loaded from .bim file.
 376 people (0 males, 0 females, 376 ambiguous) loaded from .fam.
 Ambiguous sex IDs written to
-/home/jihwanlee/Publish/test3/result/03_signal_check_5q15/ERAP2_sig1_ld.nosex .
+/home/jihwanlee/Publish/5q15_immune_dieases/result/03_signal_check_5q15/ERAP2_sig1_ld.nosex
+.
 Using up to 8 threads (change this with --threads).
 Before main variant filters, 376 founders and 0 nonfounders present.
 Calculating allele frequencies... done.
@@ -33,7 +34,7 @@ Running --r2 with the following filters:
   --ld-window-r2: 0
   --ld-snp[s]
 --r2 to
-/home/jihwanlee/Publish/test3/result/03_signal_check_5q15/ERAP2_sig1_ld.ld ...
-done.
+/home/jihwanlee/Publish/5q15_immune_dieases/result/03_signal_check_5q15/ERAP2_sig1_ld.ld
+... done.
 
-End time: Thu Dec 25 04:01:25 2025
+End time: Thu Dec 25 04:56:07 2025
