@@ -27,17 +27,10 @@ mkdir -p "$TABLEDIR"/functional_candidates
 # --------------------------
 die(){ echo "[ERR] $*" 1>&2; exit 1; }
 
-need_cmd(){
-  command -v "$1" >/dev/null 2>&1 || die "missing command: $1"
-}
+need_cmd(){ command -v "$1" >/dev/null 2>&1 || die "missing command: $1"; }
 
 zcat_auto(){
-  # usage: zcat_auto file.gz
-  if command -v zcat >/dev/null 2>&1; then
-    zcat "$1"
-  else
-    gzip -cd "$1"
-  fi
+  if command -v zcat >/dev/null 2>&1; then zcat "$1"; else gzip -cd "$1"; fi
 }
 
 get_chr_bp(){
@@ -47,26 +40,28 @@ get_chr_bp(){
 }
 
 mk_window(){
-  # prints: chr from to
+  # usage: mk_window rsID  -> prints: chr<TAB>from<TAB>to
   local snp="$1"
   local chr bp
-  read -r chr bp < <(get_chr_bp "$snp")
-  [[ -n "${chr:-}" && -n "${bp:-}" ]] || die "SNP not found in .bim: $snp"
+  local out
+  out="$(get_chr_bp "$snp" || true)"
+  [[ -n "$out" ]] || die "SNP not found in .bim: $snp"
+  chr="$(echo -e "$out" | cut -f1)"
+  bp="$(echo -e "$out" | cut -f2)"
+  [[ -n "${chr:-}" && -n "${bp:-}" ]] || die "failed to parse chr/bp for $snp"
+
   local from=$((bp - WINKB*1000))
   local to=$((bp + WINKB*1000))
-  if [[ $from -lt 1 ]]; then from=1; fi
+  ((from < 1)) && from=1
   echo -e "${chr}\t${from}\t${to}"
 }
 
 extract_credible_rsids(){
-  # supports TSV with header containing SNP column, or first column
   local credible_tsv="$1"
   local out_rsids="$2"
   awk -F'\t' '
     NR==1{
-      for(i=1;i<=NF;i++){
-        if($i=="SNP"){snpcol=i}
-      }
+      for(i=1;i<=NF;i++){ if($i=="SNP"){snpcol=i} }
       if(snpcol==0){snpcol=1}
       next
     }
@@ -78,8 +73,11 @@ make_proxy_rsids(){
   local label="$1"
   local lead="$2"
 
-  local chr from to
-  read -r chr from to < <(mk_window "$lead")
+  local win chr from to
+  win="$(mk_window "$lead")"
+  chr="$(echo -e "$win" | cut -f1)"
+  from="$(echo -e "$win" | cut -f2)"
+  to="$(echo -e "$win" | cut -f3)"
 
   local pref="$OUTDIR/ld/${label}_proxy_r2${R2TH}"
   "$PLINK" \
@@ -104,8 +102,11 @@ make_ld_window(){
   local lead="$2"
   local tag="$3"
 
-  local chr from to
-  read -r chr from to < <(mk_window "$lead")
+  local win chr from to
+  win="$(mk_window "$lead")"
+  chr="$(echo -e "$win" | cut -f1)"
+  from="$(echo -e "$win" | cut -f2)"
+  to="$(echo -e "$win" | cut -f3)"
 
   local pref="$OUTDIR/ld/${label}_${tag}"
   "$PLINK" \
@@ -119,24 +120,15 @@ make_ld_window(){
 }
 
 find_finemap_paths(){
-  # returns: credible_path \t pip_path
   local label="$1"
-  local cred1="$FINEMAP_DIR/${label}_credible95.tsv"
-  local pip1="$FINEMAP_DIR/${label}_pip.tsv"
+  local cred="$FINEMAP_DIR/${label}_credible95.tsv"
+  local pip="$FINEMAP_DIR/${label}_pip.tsv"
 
-  local cred="$cred1"
-  local pip="$pip1"
-
-  if [[ ! -f "$cred" ]]; then
-    cred="$(ls -1 "$FINEMAP_DIR"/"${label}"*credible*95*.tsv 2>/dev/null | head -1 || true)"
-  fi
-  if [[ ! -f "$pip" ]]; then
-    pip="$(ls -1 "$FINEMAP_DIR"/"${label}"*pip*.tsv 2>/dev/null | head -1 || true)"
-  fi
+  [[ -f "$cred" ]] || cred="$(ls -1 "$FINEMAP_DIR"/"${label}"*credible*95*.tsv 2>/dev/null | head -1 || true)"
+  [[ -f "$pip"  ]] || pip="$(ls -1 "$FINEMAP_DIR"/"${label}"*pip*.tsv 2>/dev/null | head -1 || true)"
 
   [[ -f "$cred" ]] || die "missing credible95 for $label in $FINEMAP_DIR"
   [[ -f "$pip"  ]] || die "missing pip for $label in $FINEMAP_DIR"
-
   echo -e "${cred}\t${pip}"
 }
 
@@ -159,17 +151,13 @@ run_one_set(){
     --top-out "$top_tsv" \
     >"$OUTDIR/logs/${label}_${out_sub}.rank.log" 2>&1
 
-  # copy top list to table dir (stable name)
   cp -f "$top_tsv" "$TABLEDIR/functional_candidates/${label}_${out_sub}.top${TOPN}.tsv"
 }
 
 # --------------------------
-# main
+# main checks
 # --------------------------
-need_cmd awk
-need_cmd sed
-need_cmd sort
-need_cmd gzip
+need_cmd awk; need_cmd sed; need_cmd sort; need_cmd gzip
 [[ -x "$PLINK" ]] || die "PLINK not executable: $PLINK"
 [[ -f "${BFILE}.bim" ]] || die "BFILE not found: ${BFILE}.bim"
 [[ -f "$SIGNALS_TSV" ]] || die "signals_summary.tsv not found: $SIGNALS_TSV"
@@ -183,23 +171,24 @@ echo "[RUN] functional annotation => $OUTDIR"
 echo "[INFO] FINEMAP_DIR=$FINEMAP_DIR"
 echo "[INFO] SIGNALS_TSV=$SIGNALS_TSV"
 
-# expected columns: gene  signal_id  snp
-while IFS=$'\t' read -r gene sid lead; do
+# signals_summary.tsv가 (3컬럼) 이든 (여러 컬럼) 이든, 앞 3개만 쓰게 강제
+tail -n +2 "$SIGNALS_TSV" | while IFS=$'\t' read -r gene sid lead rest; do
   [[ -n "${gene:-}" && -n "${sid:-}" && -n "${lead:-}" ]] || continue
 
-  # finemap prefix naming
+  # 혹시 공백 섞이면 정리
+  lead="${lead%% *}"
+
   label="$gene"
   if [[ "$gene" == "ERAP1" ]]; then
     case "$sid" in
       signal1) label="ERAP1_sig1" ;;
       signal2) label="ERAP1_sig2" ;;
       signal3) label="ERAP1_sig3" ;;
-      *) label="ERAP1_${sid}" ;;
+      *)       label="ERAP1_${sid}" ;;
     esac
   fi
 
   read -r credible pip < <(find_finemap_paths "$label" | awk -F'\t' '{print $1, $2}')
-
   echo "[RUN] $label lead=$lead"
 
   # ---- A) credible-set 기반 ----
@@ -209,7 +198,6 @@ while IFS=$'\t' read -r gene sid lead; do
 
   ld_cred="$(make_ld_window "$label" "$lead" "credible")"
   run_one_set "$label" "$lead" "$rs_cred" "$ld_cred" "$pip" "credible"
-
   topA="$TABLEDIR/functional_candidates/${label}_credible.top${TOPN}.tsv"
   echo -e "${gene}\t${sid}\t${label}\t${lead}\tcredible\t${rs_cred}\t${pip}\t${credible}\t${ld_cred}\t${topA}\t${OUTDIR}" >> "$MANIFEST"
 
@@ -217,15 +205,12 @@ while IFS=$'\t' read -r gene sid lead; do
   rs_proxy="$(make_proxy_rsids "$label" "$lead")"
   ld_proxy="$(make_ld_window "$label" "$lead" "proxy_r2${R2TH}")"
   run_one_set "$label" "$lead" "$rs_proxy" "$ld_proxy" "$pip" "proxy_r2${R2TH}"
-
   topB="$TABLEDIR/functional_candidates/${label}_proxy_r2${R2TH}.top${TOPN}.tsv"
   echo -e "${gene}\t${sid}\t${label}\t${lead}\tproxy_r2${R2TH}\t${rs_proxy}\t${pip}\t${credible}\t${ld_proxy}\t${topB}\t${OUTDIR}" >> "$MANIFEST"
 
-done < <(tail -n +2 "$SIGNALS_TSV")
+done
 
-# copy manifest to table dir too
 cp -f "$MANIFEST" "$TABLEDIR/functional_candidates_manifest.tsv"
-
 echo "[OK] done."
 echo "[OK] manifest: $MANIFEST"
 echo "[OK] top tables: $TABLEDIR/functional_candidates/"

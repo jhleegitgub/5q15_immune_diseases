@@ -67,6 +67,6 @@ echo "[RUN] combined plot: $COMBO_PNG"
   --suptitle "Genome-wide eQTL landscapes of ERAP2, ERAP1 and LNPEP expression" \
   --gw-threshold 5e-8 \
   --test ADD \
-  --xtick-step 2
+  --xtick-step 1
 
 echo "[OK] 02 done."

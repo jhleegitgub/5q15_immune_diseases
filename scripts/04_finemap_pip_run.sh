@@ -12,7 +12,7 @@ set -euo pipefail
 # ----------------------------
 BFILE="${1:-${BFILE:-../GenotypeData/GW.E-GEUV-3.EUR.MAF005.HWE1e-06}}"
 PHENO="${2:-${PHENO:-${PHENO5:-../PhenotypeData/chr5_GD462.signalGeneQuantRPKM_plink.txt}}}"
-COVAR="${3:-${COVAR:-./covar_pca10.tsv}}"
+COVAR="${3:-${COVAR:-./result/01_pca/covar_pca10.tsv}}" 
 PLINK="${4:-${PLINK:-$HOME/Software/Plink/plink}}"
 COVAR_NAMES="${5:-${COVAR_NAMES:-C1 C2 C3 C4 C5 C6 C7 C8 C9 C10}}"
 WIN="${6:-${WIN:-500000}}"

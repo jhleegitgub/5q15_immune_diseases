@@ -1,26 +1,26 @@
 PLINK v1.9.0-b.7.11 64-bit (19 Aug 2025)
 Options in effect:
   --allow-no-sex
-  --bfile /home/jihwanlee/Publish/test3/../GenotypeData/GW.E-GEUV-3.EUR.MAF005.HWE1e-06
+  --bfile /home/jihwanlee/Publish/5q15_immune_dieases/../GenotypeData/GW.E-GEUV-3.EUR.MAF005.HWE1e-06
   --chr 5
-  --covar /home/jihwanlee/Publish/test3/result/06_cross_conditional/covar/covar_plus_expr_ERAP2.tsv
+  --covar /home/jihwanlee/Publish/5q15_immune_dieases/result/06_cross_conditional/covar/covar_plus_expr_ERAP2.tsv
   --from-bp 95752589
   --linear hide-covar
-  --out /home/jihwanlee/Publish/test3/result/06_cross_conditional/assoc/LNPEP.cov_expr_ERAP2
-  --pheno /home/jihwanlee/Publish/test3/../PhenotypeData/chr5_GD462.signalGeneQuantRPKM_plink.txt
+  --out /home/jihwanlee/Publish/5q15_immune_dieases/result/06_cross_conditional/assoc/LNPEP.cov_expr_ERAP2
+  --pheno /home/jihwanlee/Publish/5q15_immune_dieases/../PhenotypeData/chr5_GD462.signalGeneQuantRPKM_plink.txt
   --pheno-name LNPEP
   --to-bp 96752589
 
 Hostname: DESKTOP-KIL3KVO
-Working directory: /home/jihwanlee/Publish/test3
-Start time: Thu Dec 25 03:10:24 2025
+Working directory: /home/jihwanlee/Publish/5q15_immune_dieases
+Start time: Thu Dec 25 05:38:28 2025
 
-Random number seed: 1766599824
+Random number seed: 1766608708
 11800 MB RAM detected; reserving 5900 MB for main workspace.
 2704 out of 5913563 variants loaded from .bim file.
 376 people (0 males, 0 females, 376 ambiguous) loaded from .fam.
 Ambiguous sex IDs written to
-/home/jihwanlee/Publish/test3/result/06_cross_conditional/assoc/LNPEP.cov_expr_ERAP2.nosex
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_cross_conditional/assoc/LNPEP.cov_expr_ERAP2.nosex
 .
 373 phenotype values present after --pheno.
 Using 1 thread (no multithreaded calculations invoked).
@@ -32,7 +32,7 @@ Total genotyping rate is exactly 1.
 2704 variants and 376 people pass filters and QC.
 Phenotype data is quantitative.
 Writing linear model association results to
-/home/jihwanlee/Publish/test3/result/06_cross_conditional/assoc/LNPEP.cov_expr_ERAP2.assoc.linear
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_cross_conditional/assoc/LNPEP.cov_expr_ERAP2.assoc.linear
 ... done.
 
-End time: Thu Dec 25 03:10:25 2025
+End time: Thu Dec 25 05:38:29 2025

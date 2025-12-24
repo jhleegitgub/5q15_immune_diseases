@@ -1,26 +1,26 @@
 PLINK v1.9.0-b.7.11 64-bit (19 Aug 2025)
 Options in effect:
-  --bfile /home/jihwanlee/Publish/test3/../GenotypeData/GW.E-GEUV-3.EUR.MAF005.HWE1e-06
+  --bfile /home/jihwanlee/Publish/5q15_immune_dieases/../GenotypeData/GW.E-GEUV-3.EUR.MAF005.HWE1e-06
   --chr 5
   --from-bp 95870879
   --ld-snp rs248215
   --ld-window 99999
   --ld-window-kb 500
   --ld-window-r2 0
-  --out /home/jihwanlee/Publish/test3/result/05_functional_annot/ld/LNPEP_credible
+  --out /home/jihwanlee/Publish/5q15_immune_dieases/result/05_functional_annot/ld/LNPEP_credible
   --r2 gz
   --to-bp 96870879
 
 Hostname: DESKTOP-KIL3KVO
-Working directory: /home/jihwanlee/Publish/test3
-Start time: Thu Dec 25 03:01:18 2025
+Working directory: /home/jihwanlee/Publish/5q15_immune_dieases
+Start time: Thu Dec 25 05:35:58 2025
 
-Random number seed: 1766599278
+Random number seed: 1766608558
 11800 MB RAM detected; reserving 5900 MB for main workspace.
 2609 out of 5913563 variants loaded from .bim file.
 376 people (0 males, 0 females, 376 ambiguous) loaded from .fam.
 Ambiguous sex IDs written to
-/home/jihwanlee/Publish/test3/result/05_functional_annot/ld/LNPEP_credible.nosex
+/home/jihwanlee/Publish/5q15_immune_dieases/result/05_functional_annot/ld/LNPEP_credible.nosex
 .
 Using up to 8 threads (change this with --threads).
 Before main variant filters, 376 founders and 0 nonfounders present.
@@ -34,7 +34,7 @@ Running --r2 with the following filters:
   --ld-window-r2: 0
   --ld-snp[s]
 --r2 to
-/home/jihwanlee/Publish/test3/result/05_functional_annot/ld/LNPEP_credible.ld.gz
+/home/jihwanlee/Publish/5q15_immune_dieases/result/05_functional_annot/ld/LNPEP_credible.ld.gz
 ... done.
 
-End time: Thu Dec 25 03:01:19 2025
+End time: Thu Dec 25 05:35:59 2025
