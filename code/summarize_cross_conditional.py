@@ -1,143 +1,152 @@
 #!/usr/bin/env python3
-import sys, csv, math
-from collections import defaultdict
+import argparse
+import os
+import re
+import pandas as pd
 
-def read_tsv(path):
-    with open(path, "r", newline="") as f:
-        r = csv.DictReader(f, delimiter="\t")
-        rows = list(r)
-        return rows
+def read_signals(path: str) -> pd.DataFrame:
+    # tolerate tabs/whitespace + lead/snp/SNP column names
+    df = pd.read_csv(path, sep=r"\s+|\t", engine="python")
+    cols = {c.lower(): c for c in df.columns}
+    if "lead" not in cols:
+        if "snp" in cols:
+            df = df.rename(columns={cols["snp"]: "lead"})
+        elif "SNP" in df.columns:
+            df = df.rename(columns={"SNP": "lead"})
+        else:
+            # fallback: 3rd column is lead
+            if df.shape[1] < 3:
+                raise ValueError(f"signals file needs >=3 cols: {path}")
+            df = df.rename(columns={df.columns[2]: "lead"})
+    if "gene" not in cols and "gene" not in df.columns:
+        df = df.rename(columns={df.columns[0]: "gene"})
+    if "signal_id" not in cols and "signal_id" not in df.columns:
+        df = df.rename(columns={df.columns[1]: "signal_id"})
+    return df[["gene", "signal_id", "lead"]].copy()
 
-def read_assoc_linear(path):
-    # PLINK .assoc.linear (whitespace-delimited)
-    rows = []
-    with open(path, "r") as f:
-        header = f.readline().split()
-        idx = {k: i for i, k in enumerate(header)}
-        for line in f:
-            sp = line.split()
-            if not sp:
-                continue
-            d = {k: sp[idx[k]] for k in idx.keys() if idx[k] < len(sp)}
-            rows.append(d)
-    return rows
+def read_runs(path: str) -> pd.DataFrame:
+    df = pd.read_csv(path, sep="\t")
+    for c in ["run_id", "outcome", "assoc"]:
+        if c not in df.columns:
+            raise ValueError(f"runs.tsv missing column '{c}': {path}")
+    return df
 
-def safe_float(x):
-    try:
-        if x is None:
-            return None
-        if x in ("NA", "nan", "NaN", ".", ""):
-            return None
-        return float(x)
-    except Exception:
-        return None
+def read_assoc_linear(path: str) -> pd.DataFrame:
+    df = pd.read_table(path, sep=r"\s+")
+    if "TEST" in df.columns:
+        df = df[df["TEST"] == "ADD"].copy()
+    return df
 
-def neglog10p(p):
-    if p is None or p <= 0:
-        return None
-    return -math.log10(p)
+def extract_beta_p(assoc_path: str, snp: str):
+    if not os.path.exists(assoc_path):
+        return (None, None)
+    df = read_assoc_linear(assoc_path)
+    if "SNP" not in df.columns:
+        return (None, None)
+    hit = df[df["SNP"] == snp]
+    if hit.empty:
+        return (None, None)
+    beta = pd.to_numeric(hit.iloc[0].get("BETA", None), errors="coerce")
+    p = pd.to_numeric(hit.iloc[0].get("P", None), errors="coerce")
+    return (None if pd.isna(beta) else float(beta),
+            None if pd.isna(p) else float(p))
 
 def main():
-    if len(sys.argv) != 4:
-        print("usage: summarize_cross_conditional.py <signals_summary.tsv> <runs.tsv> <out.tsv>", file=sys.stderr)
-        sys.exit(2)
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--signals", required=True)
+    ap.add_argument("--runs", required=True)
+    ap.add_argument("--out", required=True)
+    ap.add_argument("--erap1-cond-mode", choices=["sig1","all"], default="sig1",
+                    help="label ERAP1 SNP-conditioning as sig1 or sig1+sig2+sig3")
+    args = ap.parse_args()
 
-    signals_path, runs_path, out_path = sys.argv[1:]
+    signals = read_signals(args.signals)
+    runs = read_runs(args.runs)
 
-    signals = read_tsv(signals_path)
-    runs = read_tsv(runs_path)
+    # lead SNPs for each outcome gene = signal1 lead
+    def lead_of(g):
+        x = signals[(signals["gene"]==g) & (signals["signal_id"]=="signal1")]
+        if x.empty:
+            raise ValueError(f"missing signal1 for {g} in {args.signals}")
+        return str(x.iloc[0]["lead"])
 
-    # Expect columns in signals_summary.tsv: gene, signal_id, lead (at least)
-    gene_leads = defaultdict(list)
-    for s in signals:
-        g = s.get("gene")
-        sid = s.get("signal_id")
-        lead = s.get("lead")
-        if g and sid and lead:
-            gene_leads[g].append((sid, lead))
+    lead_ERAP2 = lead_of("ERAP2")
+    lead_ERAP1 = lead_of("ERAP1")
+    lead_LNPEP = lead_of("LNPEP")
 
-    # cache assoc parses
-    assoc_cache = {}
-    for r in runs:
-        ap = r["assoc_path"]
-        if ap not in assoc_cache:
-            assoc_cache[ap] = read_assoc_linear(ap)
+    # if ERAP1_COND_MODE=all, collect extra leads for label
+    erap1_extra = ""
+    if args.erap1_cond_mode == "all":
+        s2 = signals[(signals["gene"]=="ERAP1") & (signals["signal_id"]=="signal2")]
+        s3 = signals[(signals["gene"]=="ERAP1") & (signals["signal_id"]=="signal3")]
+        if not s2.empty and not s3.empty:
+            erap1_extra = f"+{s2.iloc[0]['lead']}+{s3.iloc[0]['lead']}"
 
-    # baseline path per outcome
-    baseline_path = {}
-    for r in runs:
-        if r["run_id"] == "baseline":
-            baseline_path[r["outcome"]] = r["assoc_path"]
+    # conditioning label mapping
+    def cond_label(run_id: str):
+        if run_id.startswith("cond_snp_"):
+            snp = run_id.replace("cond_snp_","",1)
+            if snp == lead_ERAP2:
+                return f"ERAP2 top ({lead_ERAP2})"
+            if snp == lead_ERAP1:
+                if args.erap1_cond_mode == "all":
+                    return f"ERAP1 signals ({lead_ERAP1}{erap1_extra})"
+                return f"ERAP1 top ({lead_ERAP1})"
+            if snp == lead_LNPEP:
+                return f"LNPEP top ({lead_LNPEP})"
+            return f"SNP ({snp})"
+        if run_id == "cov_expr_ERAP2": return "ERAP2 expression"
+        if run_id == "cov_expr_ERAP1": return "ERAP1 expression"
+        if run_id == "cov_expr_LNPEP": return "LNPEP expression"
+        if run_id == "cov_expr_self":  return "self expression (covariate)"
+        if run_id == "baseline":       return "baseline"
+        return run_id
 
-    def index_add(rows):
-        m = {}
-        for d in rows:
-            if d.get("TEST") != "ADD":
+    out_rows = []
+    for outcome in ["ERAP2","ERAP1","LNPEP"]:
+        lead = {"ERAP2":lead_ERAP2, "ERAP1":lead_ERAP1, "LNPEP":lead_LNPEP}[outcome]
+
+        base = runs[(runs["outcome"]==outcome) & (runs["run_id"]=="baseline")]
+        if base.empty:
+            raise ValueError(f"missing baseline for {outcome} in {args.runs}")
+        base_assoc = base.iloc[0]["assoc"]
+        b_beta, b_p = extract_beta_p(base_assoc, lead)
+
+        # compare against the 6 cross-condition runs (excluding baseline/self)
+        for rid in ["cond_snp_"+lead_ERAP2, "cond_snp_"+lead_ERAP1, "cond_snp_"+lead_LNPEP,
+                    "cov_expr_ERAP2", "cov_expr_ERAP1", "cov_expr_LNPEP"]:
+            rr = runs[(runs["outcome"]==outcome) & (runs["run_id"]==rid)]
+            if rr.empty:
                 continue
-            snp = d.get("SNP")
-            if snp:
-                m[snp] = d
-        return m
+            a_beta, a_p = extract_beta_p(rr.iloc[0]["assoc"], lead)
 
-    out_fields = [
-        "outcome","signal_id","lead_snp",
-        "run_id","cond_type","cond_label",
-        "beta_base","p_base","neglog10p_base",
-        "beta_cond","p_cond","neglog10p_cond",
-        "delta_beta_pct","delta_neglog10p_pct",
-        "assoc_path"
-    ]
+            # percent change (guard div0)
+            def pct(new, old):
+                if old is None or new is None or old == 0:
+                    return None
+                return 100.0*(new-old)/old
 
-    with open(out_path, "w", newline="") as f:
-        w = csv.DictWriter(f, delimiter="\t", fieldnames=out_fields)
-        w.writeheader()
+            def dneglogp(newp, oldp):
+                import math
+                if oldp is None or newp is None or oldp<=0 or newp<=0:
+                    return None
+                return 100.0*((-math.log10(newp)) - (-math.log10(oldp))) / (-math.log10(oldp))
 
-        for r in runs:
-            outcome = r["outcome"]
-            if outcome not in baseline_path:
-                continue
+            out_rows.append({
+                "Outcome_gene": outcome,
+                "Conditioning / covariate": cond_label(rid),
+                "lead_snp_tested": lead,
+                "baseline_beta": b_beta,
+                "baseline_p": b_p,
+                "cond_beta": a_beta,
+                "cond_p": a_p,
+                "Δβ (%)": pct(a_beta, b_beta),
+                "Δ−log10(P) (%)": dneglogp(a_p, b_p),
+            })
 
-            base_rows = assoc_cache[baseline_path[outcome]]
-            cond_rows = assoc_cache[r["assoc_path"]]
-            base_m = index_add(base_rows)
-            cond_m = index_add(cond_rows)
-
-            for sig_id, lead in gene_leads.get(outcome, []):
-                b = base_m.get(lead)
-                c = cond_m.get(lead)
-
-                beta_b = safe_float(b.get("BETA") if b else None)
-                p_b = safe_float(b.get("P") if b else None)
-                nl_b = neglog10p(p_b)
-
-                beta_c = safe_float(c.get("BETA") if c else None)
-                p_c = safe_float(c.get("P") if c else None)
-                nl_c = neglog10p(p_c)
-
-                db = None
-                dn = None
-                if beta_b is not None and beta_c is not None and beta_b != 0:
-                    db = 100.0 * (beta_c - beta_b) / beta_b
-                if nl_b is not None and nl_c is not None and nl_b != 0:
-                    dn = 100.0 * (nl_c - nl_b) / nl_b
-
-                w.writerow({
-                    "outcome": outcome,
-                    "signal_id": sig_id,
-                    "lead_snp": lead,
-                    "run_id": r["run_id"],
-                    "cond_type": r["cond_type"],
-                    "cond_label": r["cond_label"],
-                    "beta_base": beta_b,
-                    "p_base": p_b,
-                    "neglog10p_base": nl_b,
-                    "beta_cond": beta_c,
-                    "p_cond": p_c,
-                    "neglog10p_cond": nl_c,
-                    "delta_beta_pct": db,
-                    "delta_neglog10p_pct": dn,
-                    "assoc_path": r["assoc_path"]
-                })
+    out = pd.DataFrame(out_rows)
+    out.to_csv(args.out, sep="\t", index=False)
 
 if __name__ == "__main__":
     main()
+

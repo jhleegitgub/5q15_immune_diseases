@@ -1,0 +1,24 @@
+outcome	run_id	assoc_path
+ERAP2	baseline	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP2.base_pm500k.assoc.linear
+ERAP2	cond_snp_rs2910686	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP2_cond_rs2910686.assoc.linear
+ERAP2	cond_snp_rs30379	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP2_cond_rs30379.assoc.linear
+ERAP2	cond_snp_rs248215	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP2_cond_rs248215.assoc.linear
+ERAP2	cov_expr_ERAP2	NA
+ERAP2	cov_expr_ERAP1	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP2_cond_on_ERAP1expr.assoc.linear
+ERAP2	cov_expr_LNPEP	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP2_cond_on_LNPEPexpr.assoc.linear
+
+ERAP1	baseline	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP1.base.assoc.linear
+ERAP1	cond_snp_rs2910686	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP1_cond_rs2910686.assoc.linear
+ERAP1	cond_snp_rs30379	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP1_cond_rs30379.assoc.linear
+ERAP1	cond_snp_rs248215	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP1_cond_rs248215.assoc.linear
+ERAP1	cov_expr_ERAP1	NA
+ERAP1	cov_expr_ERAP2	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP1_cond_on_ERAP2expr.assoc.linear
+ERAP1	cov_expr_LNPEP	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP1_cond_on_LNPEPexpr.assoc.linear
+
+LNPEP	baseline	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/LNPEP.base.assoc.linear
+LNPEP	cond_snp_rs2910686	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/LNPEP_cond_rs2910686.assoc.linear
+LNPEP	cond_snp_rs30379	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/LNPEP_cond_rs30379.assoc.linear
+LNPEP	cond_snp_rs248215	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/LNPEP_cond_rs248215.assoc.linear
+LNPEP	cov_expr_LNPEP	NA
+LNPEP	cov_expr_ERAP2	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/LNPEP_cond_on_ERAP2expr.assoc.linear
+LNPEP	cov_expr_ERAP1	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/LNPEP_cond_on_ERAP1expr.assoc.linear

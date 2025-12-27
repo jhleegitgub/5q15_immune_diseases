@@ -1,0 +1,1709 @@
+PLINK v1.9.0-b.7.11 64-bit (19 Aug 2025)           cog-genomics.org/plink/1.9/
+(C) 2005-2025 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.log.
+Options in effect:
+  --all-pheno
+  --allow-no-sex
+  --bfile /home/jihwanlee/Publish/5q15_immune_dieases/../GenotypeData/GW.E-GEUV-3.EUR.MAF005.HWE1e-06
+  --covar /home/jihwanlee/Publish/5q15_immune_dieases/result/01_pca/covar_pca10.tsv
+  --covar-name C1 C2 C3 C4 C5 C6 C7 C8 C9 C10
+  --extract /home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/rsids/LNPEP_union_proxy0.8_cred_top20.rsids.txt
+  --linear hide-covar
+  --out /home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10
+  --pheno /home/jihwanlee/Publish/5q15_immune_dieases/../PhenotypeData/chr10_GD462.signalGeneQuantRPKM_plink.txt
+
+11800 MB RAM detected; reserving 5900 MB for main workspace.
+5913563 variants loaded from .bim file.
+376 people (0 males, 0 females, 376 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.nosex
+.
+373 phenotype values present after --pheno.
+--extract: 20 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+--covar: 10 covariates loaded.
+Before main variant filters, 376 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is exactly 1.
+20 variants and 376 people pass filters and QC.
+Phenotype data is quantitative.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.P4HA1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SEC23IP.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PDCD11.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FAM190B.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SGPL1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf111.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.DLG5.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.BLOC1S2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf114.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.HKDC1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.COMMD3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf118.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PTPLA.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ATRNL1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.METTL10.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.NRBF2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.IL2RA.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PPP2R2D.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CAMK2G.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ABLIM1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.RSU1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.GATA3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.KAZALD1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.LZTS2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PTEN.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ARHGAP12.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PSTK.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CTBP2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf25.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ARHGAP19.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.KIAA1274.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.DPYSL4.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.UBE2D1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SFXN4.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SFXN2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.GOLGA7B.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.IFIT3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PANK1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CHCHD1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MYPN.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.KCNIP2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PDLIM1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CHUK.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.GDI2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CHST3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ZEB1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TACR2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ARL5B.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.GSTO2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.RPL13AP6.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ERLIN1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ZDHHC6.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ATAD1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.DNAJC1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FRAT1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.WDR37.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.WDFY4.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.USMG5.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.RRP12.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CCDC6.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.IL15RA.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.INA.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.AP3M1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.RET.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CDC123.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.POLL.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TLL2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.NCOA4.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SMC3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PYROXD2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.RBM17.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ATE1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TM9SF3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.LCOR.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf10.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf12.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.GRID1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FRMPD2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SAR1A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.RAB11FIP2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.KIAA1598.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ZFYVE27.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ARID5B.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ADARB2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf68.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CUEDC2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ZMYND11.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CPEB3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf88.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SGMS1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MYOF.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.KLF6.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SLIT1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ITGB1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MCM10.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.BMI1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SUFU.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.NRP1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PARD3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.EXOC6.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.BTRC.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ASAH2B.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ANK3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ACTR1A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SUPV3L1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PPP3CB.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.IDI1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.IPMK.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TSPAN14.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TSPAN15.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MARCH5.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SFMBT2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.HPS6.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.HPS1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SLC25A16.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MARCH8.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.EIF3A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FGFBP3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.KNDC1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.LDB1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.NMT2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SEC24C.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FAM45A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CSTF2T.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf128.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.UBTD1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PLEKHA1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TIAL1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.XPNPEP1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FAM24B.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SLC29A3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CCAR1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.DHX32.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.STAM.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf28.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.DDX50.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.AS3MT.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MGEA5.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TNKS2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.RASGEF1A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.BUB3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.NUDT5.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MLLT10.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TRDMT1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ZNF22.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.STK32C.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.COMTD1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TRIM8.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CREM.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ZNF503.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf26.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.COX15.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf57.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.NODAL.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.KIF11.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PPA1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ITIH5.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.AKR1C1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.AKR1C2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ECD.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FAM35A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.RAB18.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.DNMBP.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ZNF438.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.LARP4B.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SMNDC1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SEPHS1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MAPK8.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ACADSB.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.KIAA1279.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.REEP3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FAM149B1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CNNM1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CNNM2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FBXW4.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.RTKN2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SHOC2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FAM107B.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CUZD1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SH3PXD2A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SVIL.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.NEURL.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FAM188A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CEP55.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PRDX3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ERCC6.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MRPS16.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SORBS1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.LOXL4.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MMRN2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PFKP.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TET1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.DNAJC12.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ACBD5.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.RUFY2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.VCL.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.BMS1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PDSS1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SLK.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PRKCQ.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PHYH.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SLC16A9.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.DDX21.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CHST15.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FAM170B.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PFKFB3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ABI1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.NSUN6.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.VTI1A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SEC61A2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FBXO18.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ADD3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.NDUFB8.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.POLR3A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SYT15.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MAP3K8.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PPP1R3C.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TRUB1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MPP7.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CDNF.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CUL2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CDH23.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MAT1A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SLC25A28.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MTPAP.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.INPP5A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.GHITM.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.INPP5F.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.KIF5B.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TCF7L2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.KIN.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FRA10AC1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ZNF37A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.GBF1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TTC18.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.YME1L1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf131.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.EGR2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.DNAJB12.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.JMJD1C.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ANXA11.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CISD1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.UNC5B.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.HERC4.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.NANOS1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PRTFDC1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PSD.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.EIF4EBP2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf47.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf46.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.BAG3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.RPP38.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.RPP30.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MSRB2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PLCE1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ADAMTS14.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.UPF2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SRGN.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.VDAC2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PDCD4.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FBXL15.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CSGALNACT2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MASTL.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MTG1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.STOX1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FAM160B1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PWWP2B.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.BNIP3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.RPS24.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PCBD1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ALDH18A1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.WAC.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.BTAF1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FAM171A1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PIP4K2A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ADRB1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.WDR11.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.COL13A1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.WAPAL.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.AVPI1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PPIF.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ZMIZ1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.KIAA1217.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CUTC.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.DIP2C.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.LRRC27.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.BMPR1A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.LRRC20.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ANKRD16.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MEIG1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.DCLRE1C.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.DCLRE1A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.DNA2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.LHPP.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FRAT2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.OGDHL.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.NT5C2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.NET1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf35.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf32.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ANXA7.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SUV39H2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.GTPBP4.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.RHOBTB1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.NSMCE4A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FAM53B.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CASP7.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.KIAA0913.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ECHDC3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.NOC3L.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.EPC1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FAM178A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.HECTD2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ASB13.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ZRANB1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.GLRX3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.OAT.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.NHLRC2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.HIF1AN.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.NDST2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.GRK5.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ARHGAP22.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ARHGAP21.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PITRM1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.GOT1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.BLNK.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.DDIT4.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SPAG6.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.HK1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ZNF365.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.BAMBI.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.OTUD1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MGMT.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FUT11.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PCGF5.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PCGF6.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CCNY.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ZNF32.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CCNJ.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.AFAP1L2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ZWINT.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.RASSF4.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.VIM.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MMS19.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ATP5C1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.NEBL.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PLAC9.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SCD.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FAM175B.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SAMD8.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SIRT1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C1QL3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SH2D4B.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ZCCHC24.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ANKRD26.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ANKRD22.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FGF8.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf140.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TAF5.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TAF3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.LRRC18.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.USP54.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SNCG.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ELOVL3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.RBM20.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ASCC1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PDZD8.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.OBFC1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.HNRNPH3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.IKZF5.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.IDE.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CWF19L1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.DNAJC9.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FZD8.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CACNB2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.HSPA12A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf76.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TYSND1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.DUSP5.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.NFKB2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.HNRNPF.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.HELLS.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.HHEX.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PBLD.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf99.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.C10orf91.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ZNF518A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ADK.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.THNSL1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.VPS26A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.RGS10.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TACC2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ZNF485.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.GLUD1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TBC1D12.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.KIF20B.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MKI67.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.HMX3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.HMX2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ARL3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.UROS.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ZNF248.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.FRMD4A.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.SEC31B.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PAPSS2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PRPF18.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ADO.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.WNT8B.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ABCC2.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.USP6NL.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TFAM.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.CUBN.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PLAU.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.ARMC3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.NPM3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.HSPA14.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MXI1.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.PTPRE.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.TCTN3.assoc.linear
+... 0%done.
+373 phenotype values present after --pheno.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/06_transcis_scan/LNPEP/assoc_by_chr/LNPEP_cand_chr10.MYOZ1.assoc.linear
+... 0%done.

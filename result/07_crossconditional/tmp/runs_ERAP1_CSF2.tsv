@@ -1,0 +1,7 @@
+outcome	run_id	cond_type	cond_label	baseline_path	assoc_path
+ERAP1	baseline	baseline	baseline	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP1_base.assoc.linear	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP1_base.assoc.linear
+CSF2	baseline	baseline	baseline	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/CSF2_base.assoc.linear	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/CSF2_base.assoc.linear
+ERAP1	cond_rs34703	snp	CSF2	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP1_base.assoc.linear	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP1_cond_rs34703.assoc.linear
+ERAP1	condexpr_CSF2	expr	CSF2_expr	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP1_base.assoc.linear	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP1_cond_on_CSF2expr.assoc.linear
+CSF2	cond_ERAP1sig123	snp	ERAP1_sig123	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/CSF2_base.assoc.linear	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/CSF2_cond_ERAP1sig123.assoc.linear
+CSF2	condexpr_ERAP1	expr	ERAP1_expr	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/CSF2_base.assoc.linear	/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/CSF2_cond_on_ERAP1expr.assoc.linear

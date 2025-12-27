@@ -1,0 +1,2 @@
+pheno_gene	pheno_chr	cis_trans	SNP_CHR	SNP	BP	A1	BETA	STAT	P	NMISS	source_file	q_bh
+PHENO	5	cis	5	rs469758	96121715	C	8.742	16.84	2.343e-47	373	ERAP1_cand_chr5.ERAP1.assoc.linear	5.392473074999999e-43

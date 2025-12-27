@@ -1,0 +1,41 @@
+PLINK v1.9.0-b.7.11 64-bit (19 Aug 2025)
+Options in effect:
+  --allow-no-sex
+  --bfile /home/jihwanlee/Publish/5q15_immune_dieases/../GenotypeData/GW.E-GEUV-3.EUR.MAF005.HWE1e-06
+  --chr 5
+  --condition rs30379
+  --covar /home/jihwanlee/Publish/5q15_immune_dieases/result/01_pca/covar_pca10.tsv
+  --covar-name C1 C2 C3 C4 C5 C6 C7 C8 C9 C10
+  --extract /home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/tmp/ld_rs1065407_pm500000.snplist
+  --from-bp 95612083
+  --linear hide-covar
+  --out /home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP1_cond_rs30379
+  --pheno /home/jihwanlee/Publish/5q15_immune_dieases/../PhenotypeData/chr5_GD462.signalGeneQuantRPKM_plink.txt
+  --pheno-name ERAP1
+  --to-bp 96612083
+
+Hostname: DESKTOP-KIL3KVO
+Working directory: /home/jihwanlee/Publish/5q15_immune_dieases
+Start time: Sat Dec 27 22:40:24 2025
+
+Random number seed: 1766842824
+11800 MB RAM detected; reserving 5900 MB for main workspace.
+2454 out of 5913563 variants loaded from .bim file.
+376 people (0 males, 0 females, 376 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP1_cond_rs30379.nosex
+.
+373 phenotype values present after --pheno.
+--extract: 2454 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+--covar: 10 covariates loaded.
+Before main variant filters, 376 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is exactly 1.
+2454 variants and 376 people pass filters and QC.
+Phenotype data is quantitative.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/ERAP1_cond_rs30379.assoc.linear
+... done.
+
+End time: Sat Dec 27 22:40:25 2025

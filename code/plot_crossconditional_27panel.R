@@ -5,7 +5,7 @@ suppressWarnings(suppressMessages({
 
 args <- commandArgs(trailingOnly=TRUE)
 if (length(args) != 9) {
-  cat("usage: plot_crossconditional_27panel.R <runs.tsv> <signals.tsv> <ld_erap2.ld.gz> <ld_erap1.ld.gz> <ld_lnpep.ld.gz> <winkb> <out_pdf> <out_png> <out_table>\n", file=stderr())
+  cat("usage: plot_crossconditional_27panel.R <runs.tsv> <signals.tsv> <ld_erap2.ld(.gz)> <ld_erap1.ld(.gz)> <ld_lnpep.ld(.gz)> <winkb> <out_pdf> <out_png> <out_table>\n", file=stderr())
   quit(status=2)
 }
 
@@ -32,9 +32,14 @@ read_assoc <- function(p){
 }
 
 read_ld <- function(p){
-  con <- gzfile(p, "rt")
-  ld <- read.table(con, header=TRUE, stringsAsFactors=FALSE)
-  close(con)
+  # accepts .ld, .ld.gz
+  if (grepl("\\.gz$", p)) {
+    con <- gzfile(p, "rt")
+    ld <- read.table(con, header=TRUE, stringsAsFactors=FALSE)
+    close(con)
+  } else {
+    ld <- read.table(p, header=TRUE, stringsAsFactors=FALSE)
+  }
   ld <- ld[, c("SNP_B","R2")]
   colnames(ld) <- c("SNP","r2")
   aggregate(r2 ~ SNP, data=ld, FUN=max)
@@ -44,10 +49,13 @@ runs <- read_tsv(runs_path)
 signals <- read_tsv(signals_path)
 
 lead_of <- function(g){
+  # support lead / lead_snp
+  lead_col <- if ("lead" %in% colnames(signals)) "lead" else if ("lead_snp" %in% colnames(signals)) "lead_snp" else colnames(signals)[3]
   s <- signals[signals$gene==g & signals$signal_id=="signal1", ]
   if (nrow(s)==0) stop(paste("missing signal1 for", g))
-  s$lead[1]
+  as.character(s[[lead_col]][1])
 }
+
 lead_ERAP2 <- lead_of("ERAP2")
 lead_ERAP1 <- lead_of("ERAP1")
 lead_LNPEP <- lead_of("LNPEP")
@@ -62,6 +70,12 @@ assoc_path <- function(outcome, run_id){
   r <- runs[runs$outcome==outcome & runs$run_id==run_id, ]
   if (nrow(r)==0) return(NA)
   r$assoc_path[1]
+}
+
+# pick ERAP1 SNP-conditioning run id
+rid_erap1_snp <- paste0("cond_snp_", lead_ERAP1)
+if (any(runs$run_id == "cond_snp_ERAP1_sig123")) {
+  rid_erap1_snp <- "cond_snp_ERAP1_sig123"
 }
 
 panel_data_for_outcome <- function(outcome){
@@ -81,7 +95,7 @@ panel_data_for_outcome <- function(outcome){
     cg <- cols$cond_gene[i]
     ref <- cols$ref_snp[i]
 
-    run_snp <- paste0("cond_snp_", ref)
+    run_snp <- if (cg=="ERAP1") rid_erap1_snp else paste0("cond_snp_", ref)
     p_snp <- assoc_path(outcome, run_snp)
     if (!is.na(p_snp)) {
       snp <- read_assoc(p_snp)
@@ -180,6 +194,10 @@ for (i in 1:nrow(att_s1)){
     att_s1$conditioning_gene[i] <- "baseline"
     att_s1$conditioning_type[i] <- "baseline"
     att_s1$conditioning_item[i] <- "baseline"
+  } else if (rid=="cond_snp_ERAP1_sig123"){
+    att_s1$conditioning_gene[i] <- "ERAP1"
+    att_s1$conditioning_type[i] <- "SNP"
+    att_s1$conditioning_item[i] <- "ERAP1_sig1+sig2+sig3"
   } else if (grepl("^cond_snp_", rid)){
     snp <- sub("^cond_snp_", "", rid)
     g <- if (snp==lead_ERAP2) "ERAP2" else if (snp==lead_ERAP1) "ERAP1" else if (snp==lead_LNPEP) "LNPEP" else "other"
@@ -195,9 +213,7 @@ for (i in 1:nrow(att_s1)){
 }
 
 tab <- att_s1[att_s1$run_id!="baseline", c(
-  "outcome","lead_snp","conditioning_gene","conditioning_type","conditioning_item",
-  "beta_base","p_base","neglog10p_base",
-  "beta_cond","p_cond","neglog10p_cond",
+  "outcome","conditioning_gene","conditioning_type","conditioning_item",
   "delta_beta_pct","delta_neglog10p_pct"
 )]
 write.table(tab, out_table, sep="\t", quote=FALSE, row.names=FALSE)

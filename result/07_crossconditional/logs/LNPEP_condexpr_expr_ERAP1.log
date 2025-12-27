@@ -1,0 +1,34 @@
+PLINK v1.9.0-b.7.11 64-bit (19 Aug 2025)           cog-genomics.org/plink/1.9/
+(C) 2005-2025 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to /home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/LNPEP_cond_on_ERAP1expr.log.
+Options in effect:
+  --allow-no-sex
+  --bfile ../GenotypeData/GW.E-GEUV-3.EUR.MAF005.HWE1e-06
+  --chr 5
+  --covar /home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/tmp/covar_plus_ERAP1.tsv
+  --covar-name C1 C2 C3 C4 C5 C6 C7 C8 C9 C10 expr_ERAP1
+  --from-bp 95612083
+  --linear hide-covar
+  --out /home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/LNPEP_cond_on_ERAP1expr
+  --pheno ../PhenotypeData/chr5_GD462.signalGeneQuantRPKM_plink.txt
+  --pheno-name LNPEP
+  --to-bp 96612083
+
+11800 MB RAM detected; reserving 5900 MB for main workspace.
+2454 out of 5913563 variants loaded from .bim file.
+376 people (0 males, 0 females, 376 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/LNPEP_cond_on_ERAP1expr.nosex
+.
+373 phenotype values present after --pheno.
+Using 1 thread (no multithreaded calculations invoked).
+--covar: 11 covariates loaded.
+3 people were not seen in the covariate file.
+Before main variant filters, 376 founders and 0 nonfounders present.
+Calculating allele frequencies... 0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99% done.
+Total genotyping rate is exactly 1.
+2454 variants and 376 people pass filters and QC.
+Phenotype data is quantitative.
+Writing linear model association results to
+/home/jihwanlee/Publish/5q15_immune_dieases/result/07_crossconditional/assoc/LNPEP_cond_on_ERAP1expr.assoc.linear
+... 0%20%41%62%83%done.
